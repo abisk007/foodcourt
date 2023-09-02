@@ -1,0 +1,120 @@
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  
+    background: linear-gradient(rgba(255, 254, 254, 0.7),rgba(0,0,0,0.7)),url(two.jpeg);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  h1 span{
+    color: #c90606;
+    font-style: italic;
+  }
+  
+  .section {
+    margin-top: 30px;
+    animation: fadeInUp 1s ease-in-out;
+   
+  }
+  
+  .section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c90606;
+  }
+  .section p{
+    font-weight: 600;
+    
+
+  }
+  .section p span{
+    color: #c90606;
+  }
+  
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+   
+  }
+  
+  .item {
+    background-color: rgba(116, 77, 77, 0.7);
+    border: 1px solid #c90606;
+    box-shadow: 4px -2px 3px crimson ;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .item img {
+    max-width: 100%;
+    border-radius: 20px;
+    height: auto;
+  }
+  
+  .item h3 {
+    margin-top: 10px;
+  }
+  
+  .item p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+  }
+  .button  a button {
+    background: #62f062;
+    font-weight: 900;
+    margin: 10px;
+    padding: 10px;
+  border-radius: 10px;
+
+  
+
+    
+  }
+  .button  a button:hover{
+    background-color: antiquewhite;
+    color: #c90606;
+
+    cursor: pointer;
+    transition: .4s ease;
+
+
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
